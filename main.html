@@ -23,6 +23,36 @@ As for issues I have with people other than myself...
 
 <body style="background-color:aquamarine;">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+<div style=""90px; height: 400px; ">
+    <canvas id="myChart"></canvas>
+</div>"
+
+<script>
+
+    let labels = ['Root of Nightmares', 'Vault of Glass', 'Kings Fall', 'Crotas End, 'Vow of The Disciple', Deep Stone Crypt' ];
+    
+    let itemdata = [322, 229, 171, 20, 112, 160]
+
+    const data = {
+            labels: ,
+            datasets: [{
+               data: itemdata,
+               backgroundColor: 'rgb(128, 136, 209)'
+            }]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data
+    };
+
+    const chart = new Chart(
+        document.getElementById('myChart'),
+        config
+        ;
+    )
+</script>
 
 
